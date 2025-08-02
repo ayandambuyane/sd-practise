@@ -12,7 +12,6 @@ const int maxAttempts = 5;
 
    // srand(static_cast<unsigned int>(time(0))); // Seed the random number generator
     cout << "Welcome to the Number Guessing Game!" << endl;
-   // cout << "I have selected a number between 1 and 100." << endl;
     cout << "You have " << maxAttempts << " attempts to guess it." << endl;
 
     for (int attempts = 0; attempts < maxAttempts; ++attempts) 
@@ -26,18 +25,22 @@ const int maxAttempts = 5;
             continue;
         }
 
-        if (guess < number) {
+        if (guess < number)
+         {
             cout << "Guess higher" << endl;
-        } else if (guess > number) {
+        } 
+        else if (guess > number)
+         {
             cout << "Guess lower" << endl;
-        } else {
+        }
+         else
+         {
             cout << "You win!" << endl;
             return 0; // Exit the game on a correct guess
         }
     }
 
-   cout << "You lose!" << "The number was"<<" " <<number<< endl;
-    // If we reach here, the player has used all attempts without guessing correctly    
+   cout << "You lose! The number was "<<number<< endl; // If we reach here, the player has used all attempts without guessing correctly    
 
    
     return 0;
