@@ -10,10 +10,8 @@ int number= rand() % 100 + 1; // generated random number
 int guess;  // from user
 const int maxAttempts = 5;  // total attempts user has
 
-   // srand(static_cast<unsigned int>(time(0))); // Seed the random number generator
-    cout << "Welcome to the Number Guessing Game!" << endl;
-    cout << "You have " << maxAttempts << " attempts to guess it." << endl;
-
+   
+   
     for (int attempts = 0; attempts < maxAttempts; ++attempts) // loop for the number of attempts
     {
         cout << "Enter your guess: ";
